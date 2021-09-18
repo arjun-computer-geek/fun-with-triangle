@@ -1,0 +1,44 @@
+.hypotenuse{
+    /* border: 2px solid  red; */
+    display: flex;
+    flex-direction: row;
+}
+.hypotenuse img{
+    height: 30%;
+    width: 30%;
+}
+.hypotenuse div{
+    padding-left: 20px;
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+}
+
+#output{
+    font-size: 36pt;
+}
+.hypotenuse label{
+    font-size: 24pt;
+}
+.hypotenuse label > span{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(173, 171, 171);
+    font-size: 12pt;
+}
+#base{
+    margin-left: 15px;
+}
+.hypotenuse input{
+    padding:5px;
+    border-radius: 2px;
+    border: 1px solid rgb(201, 198, 198);
+}
+.hypotenuse input:focus{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#hypotenuse-text{
+    color: rgb(173, 171, 171);
+    font-size: 20pt;
+}

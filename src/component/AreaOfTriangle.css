@@ -1,0 +1,26 @@
+.area-of-triangle-container{
+    text-align: center;
+}
+#output{
+    font-size: 36pt;
+}
+.area-of-triangle-container label{
+    font-size: 24pt;
+}
+.area-of-triangle-container label > span{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(173, 171, 171);
+    font-size: 12pt;
+}
+#base{
+    margin-left: 15px;
+}
+.area-of-triangle-container input{
+    padding:5px;
+    border-radius: 2px;
+    border: 1px solid rgb(201, 198, 198);;
+}
+.area-of-triangle-container input:focus{
+    border: 1px solid rgb(0, 0, 0);
+}
