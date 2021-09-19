@@ -7,11 +7,11 @@ const AreaOfTriangle = () => {
     const [height, setHeight] = useState('');
 
     useEffect(() => {
-        if(base !== '' || base !== ''){
+        if(base !== '' && base !== ''){
             let b = Number(base)
             let h = Number(height)
-            let area = (b * h) /2;
-            setArea(area)
+            let areaOfTriangle = (b * h) /2;
+            setArea(areaOfTriangle)
         }
         
     }, [area,base,height])
