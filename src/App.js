@@ -13,6 +13,7 @@ const App = () => {
   return (
     <Router>
       <Header/>
+      <Route path = "/" component={IsTriangle} exact />
       <Route path = "/is-triangle" component={IsTriangle} exact />
       <Route path = "/quiz" component={Quiz} exact />
       <Route path = "/hypotenuse" component={Hypotenuse} exact />
