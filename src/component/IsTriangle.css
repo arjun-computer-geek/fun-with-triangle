@@ -7,8 +7,8 @@
 .isTriangle h1{
     margin-bottom: 10px;
 }
-.isTriangle lable, input{
-    margin: 15px 0px;
+.isTriangle label, input{
+    margin: 5px 0px;
 }
 .isTriangle input{
     padding: 5px;
@@ -16,7 +16,6 @@
     width: 40%;
     border-radius: 2px;
     border: 1px solid rgb(201, 198, 198);
-    /* background: red; */
 }
 .isTriangle input:focus{
     border: 1px solid rgb(0, 0, 0);
@@ -33,4 +32,18 @@
 .isTriangle button:hover{
     background: rgb(9, 204, 9);
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .isTriangle{
+        width: 90%;
+    }
+    .isTriangle input{
+        padding: 10px;
+        width: 100%;
+    }
+    .isTriangle button{
+        width: 50%;
+        margin-top: 20px;
+    }
 }
