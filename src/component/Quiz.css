@@ -23,7 +23,7 @@
 }
 #option button{
     background: none;
-    border: 2px solid rgb(134, 248, 182);;
+    border: 2px solid rgb(134, 248, 182);
     border-radius: 10px;
     height: 15%;
     margin: 10px;
@@ -42,4 +42,33 @@
     font-size: 18pt;
     top: 50%;
     left: 35%;
+}
+
+@media only screen and (max-width: 600px){
+    .quiz{
+        padding: 10px;
+        margin: 0px;
+        width: 90%;
+        margin: auto;
+        
+    }
+    #quiz-container{
+        min-height: 75vh;
+        width: 100%;
+        flex-direction: column;
+    }
+    #question, #option{
+        padding: 15px;
+        font-size: 16pt;
+    }
+    #option button{
+        border-radius: 10px;
+        height: 50px;
+        width: 90%;
+        margin: 10px;
+    }
+    .score-section{
+        top: 50%;
+        left: 20%;
+    }
 }
