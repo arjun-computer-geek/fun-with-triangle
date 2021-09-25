@@ -24,3 +24,11 @@
 .area-of-triangle-container input:focus{
     border: 1px solid rgb(0, 0, 0);
 }
+
+@media only screen and (max-width: 600px){
+    .area-of-triangle-container{
+        width: 90%;
+        padding: 0px;
+        padding-top: 40px;
+    }
+}
