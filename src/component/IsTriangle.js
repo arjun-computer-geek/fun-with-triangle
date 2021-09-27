@@ -8,12 +8,16 @@ const IsTriangle = () => {
     const outputBox = useRef(null);
 
     const checkIsTriangle = () => {
-        let sumOfAngle = Number(angle1.current.value) + Number(angle2.current.value) + Number(angle3.current.value)
-        
-        if(sumOfAngle === 180){
-            outputBox.current.innerText = 'yes! Given angle can form a triangle'
-        }else{
-            outputBox.current.innerText ='Given angle can\'t form a triangle'
+        if(angle1.current.value < 0 || angle2.current.value < 0 || angle3.current.value < 0){
+            outputBox.current.innerText = 'Given input can\'t be negative'
+        }
+        else{
+            let sumOfAngle = Number(angle1.current.value) + Number(angle2.current.value) + Number(angle3.current.value)
+            if(sumOfAngle === 180){
+                outputBox.current.innerText = 'yes! Given angle can form a triangle'
+            }else{
+                outputBox.current.innerText ='Given angle can\'t form a triangle'
+            }
         }
     }
     return (
