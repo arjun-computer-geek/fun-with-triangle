@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Hypotenuse.css'
 import triangleImage from './img/triangle.png'
 
@@ -6,9 +6,14 @@ const Hypotenuse = () => {
     const [a, setA] = useState('');
     const [b, setB] = useState('');
     const [c, setC] = useState('');
+    const outputBox = useRef(null);
 
     useEffect(() => {
-        if(a !== '' && b !== ''){
+        if(a < 0 || b < 0){
+            outputBox.current.innerText = 'Given Inputs can\'t be negative.'
+        }
+        else if(a !== '' && b !== ''){
+            outputBox.current.innerText = ''
             let a1 = Number(a)
             let b1 = Number(b)
             let h = Math.sqrt(a1 * a1 + b1 * b1);
@@ -30,6 +35,7 @@ const Hypotenuse = () => {
                 <label htmlFor="height">b <span>Leg</span></label>
                 <input type="text" placeholder="Enter value" id="b" onChange={event => setB(event.target.value)} />
 
+                <div id="output" ref={outputBox}></div>
             </div>
         </div>
     )
