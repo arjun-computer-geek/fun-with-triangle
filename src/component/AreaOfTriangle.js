@@ -1,13 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './AreaOfTriangle.css'
 
 const AreaOfTriangle = () => {
     const [area, setArea] = useState('');
     const [base, setBase] = useState('');
     const [height, setHeight] = useState('');
+    const outputBox = useRef(null);
 
     useEffect(() => {
-        if(base !== '' && height !== ''){
+
+        if(base < 0 || height < 0){
+            outputBox.current.innerText = 'Given Inputs can\'t be negative.'
+        }
+        else if(base !== '' && height !== ''){
+            outputBox.current.innerText = ''
             let b = Number(base)
             let h = Number(height)
             let areaOfTriangle = (b * h) /2;
@@ -24,7 +30,7 @@ const AreaOfTriangle = () => {
             <br/>
             <label htmlFor="height">h <span>Height</span></label>
             <input type="text" placeholder="Enter value" id="height" onChange={event => setHeight(event.target.value)} />
-
+            <div id="output" ref={outputBox}></div>
         </div>
     )
 }
