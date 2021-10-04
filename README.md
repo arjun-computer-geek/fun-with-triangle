@@ -7,4 +7,4 @@ Fun with triangle
 - Calculator for area of triangle.
 ## See Here what I made.
 It is made by using the ReactJs.
-# Let's See [App}](https://youthful-varahamihira-746096.netlify.app/area-of-triangle)
+# Let's See [App](https://youthful-varahamihira-746096.netlify.app/)
